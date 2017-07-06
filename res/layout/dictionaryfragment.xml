@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rela_topNav"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/dictbg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/Relayout_click_gosearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/relayout_search_shape" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/magnifier" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="@string/Redict_search"
+                android:textColor="#777" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/font2_sealogo"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dayone"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/reload_vector" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_phrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:text="Every day is a new day!"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_phrase_trans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="每一天都是崭新的一天！" />
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp"
+                    android:gravity="right"
+                    android:text="forrestyuan" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/topborder_layoutlist" >
+
+            <ImageView
+                android:id="@+id/iv_phrase_voice"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/medium_volum_vector" />
+
+            <ImageView
+                android:id="@+id/iv_phrase_like"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/like_vector" />
+
+            <ImageView
+                android:id="@+id/iv_phrase_share"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/upload_vector" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

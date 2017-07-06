@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/edit_text_focus" >
+
+    <TextView
+        android:id="@+id/tv_article_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/iv_article_thumbnail"
+        android:ems="15"
+        android:layout_marginRight="5dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="春风化雨暖透我的心,是否时间还会告诉你结果，不害怕.."
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_article_thumbnail"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edit_text_focus"
+        android:src="@drawable/englishdevil" />
+
+    <TextView
+        android:id="@+id/tv_article_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#666"
+        android:layout_below="@+id/tv_article_title"
+        android:text="beyond" />
+
+    <TextView
+        android:id="@+id/tv_article_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_article_title"
+        android:layout_marginLeft="40dp"
+        android:textColor="#666"
+        android:layout_toRightOf="@+id/tv_article_type"
+        android:text="2017-06-27" />
+	
+</RelativeLayout>

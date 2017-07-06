@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:background="@drawable/edit_text_focus" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/at_radio0"
+                    style="@style/selectLan_checked"
+                    android:text="@string/at_radio4" />
+
+                <RadioButton
+                    android:id="@+id/at_radio1"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio1" />
+
+                <RadioButton
+                    android:id="@+id/at_radio2"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio2"  
+                    />
+                 <RadioButton
+                    android:id="@+id/at_radio3"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio3"  
+                    />
+                  <RadioButton
+                    android:id="@+id/at_radio4"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio0"  
+                    />
+                 <RadioButton
+                    android:id="@+id/at_radio5"
+					style="@style/selectLan"                    
+                    android:text="@string/at_radio5"  
+                    />
+                 <RadioButton
+                    android:id="@+id/at_radio6"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio6"  
+                    />
+                 <RadioButton
+                    android:id="@+id/at_radio7"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio7"  
+                    />
+                     
+                 <RadioButton
+                    android:id="@+id/at_radio8"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio8"  
+                    />
+                 <RadioButton
+                    android:id="@+id/at_radio9"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio9"  
+                    />
+                       
+                 <RadioButton
+                    android:id="@+id/at_radio10"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio10"  
+                    />
+                        
+                  <RadioButton
+                    android:id="@+id/at_radio11"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio11"  
+                    />
+                 <RadioButton
+                    android:id="@+id/at_radio12"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio12"  
+                    />
+                  <RadioButton
+                    android:id="@+id/at_radio13"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio13"  
+                    />
+                  <RadioButton
+                    android:id="@+id/at_radio14"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio14"  
+                    />
+                  <RadioButton
+                    android:id="@+id/at_radio15"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio15"  
+                   />
+                  <RadioButton
+                    android:id="@+id/at_radio16"
+                    style="@style/selectLan"
+                    android:text="@string/at_radio16"  
+                   />
+                                
+            </RadioGroup>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listview_wrapArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_reload_article"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_focus"
+                android:text="刷新"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_article_loadicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/reload_vector" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

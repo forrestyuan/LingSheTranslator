@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 使用了重写viewpager类里的方法的类 -->
+    <com.yfc.lingshetranslator.noscrollView.NoScrollView
+        android:id="@+id/viewPaager1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.yfc.lingshetranslator.noscrollView.NoScrollView>
+
+<RadioGroup
+    android:id="@+id/tab_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_focus"  
+    android:orientation="horizontal"
+     >
+
+    <RadioButton
+        android:id="@+id/radio0"
+        android:text="@string/radio_dictionary" 
+        android:drawableTop="@drawable/globe_vector"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        style="@style/fragmentselect"
+        />
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:text="@string/radio_translate" 
+        android:drawableTop="@drawable/bookmark_vector"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        style="@style/fragmentselect"
+        />
+     <RadioButton
+        android:id="@+id/radio4"
+        android:text="@string/radio_article"
+        android:drawableTop="@drawable/near_me_vector"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+		style="@style/fragmentselect"
+         />
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:text="@string/radio_recite" 
+        android:drawableTop="@drawable/timer_vector"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+		style="@style/fragmentselect"
+        />
+    <RadioButton
+        android:id="@+id/radio3"
+        android:text="@string/radio_myinfo" 
+        android:drawableTop="@drawable/user_male_circle_vector"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        style="@style/fragmentselect"
+        />
+</RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">灵蛇译神</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="login_label">登录页</string>
+    <string name="regist_label">注册页</string>
+    <string name="reg_label_username">用户名:</string>
+    <string name="reg_label_password">密     码:</string>
+    <string name="reg_label_phone">手机号:</string>
+    <string name="reg_label_motto">座右铭:</string>
+    
+    <string name="tv_left_setting">我的设置</string>
+    <string name="tv_left_vocabulary">我的词库</string>
+    <string name="tv_left_englishwords">我的词汇量</string>
+    <string name="tv_left_saygoodornot">给我们评价</string>
+    <string name="tv_left_exit">退    出</string>
+    <string name="tv_left_bad">我踩</string>
+    <string name="tv_left_good">我顶</string>
+    <string name="tv_fromto">目标语言</string>
+    <string name="tv_res_tip">翻译结果:</string>
+    <string name="search_history">历史记录</string>
+    <string name="clear_search_history">清空所有</string>
+    <string name="Redict_search">搜索字、词、成语</string>
+    <string name="font2_sealogo">灵蛇英语狂人</string>
+    <string name="dayone">每日一句</string>
+    
+    <string name="radio_translate">翻译</string>
+   <string name="radio_dictionary">词典</string>
+   <string name="radio_article">文章</string>
+   <string name="radio_recite">译背</string>
+   <string name="radio_myinfo">我的</string>
+       
+    <string name="btn_login">登录</string>
+    <string name="btn_regist">注册</string>
+	<string name="btn_up_gallery">相册选择</string>
+	<string name="btn_up_camera">拍照获取</string>
+    
+    <string name="username_hint">请输入您的账号</string>
+    <string name="password_hint">请输入您的密码</string>
+    <string name="reg_usernamehit">用户名为数字,字母,下划线</string>
+    <string name="reg_phonehint">请输入手机号</string>
+    <string name="reg_mottohint">请输入您的座右铭</string>
+    <string name="from">请在这里输入您要翻译的文本</string>
+    
+    <string name="tv_oauth">第三方登陆</string>
+    <string name="label_regist">没有账号？去注册</string>
+    <string name="label_forgetpass">暂不登陆？</string>
+    
+    <!-- lang -->
+    <string name="radio0">英文</string>
+    <string name="radio1">中文</string>
+    <string name="radio2">韩文</string>
+    <string name="radio3">德文</string>
+    <string name="radio4">法文</string>
+    <string name="radio5">俄文</string>
+    <string name="radio6">泰文</string>
+    <string name="radio7">印地文</string>
+    <string name="radio8">意大利文</string>
+    <string name="radio9">荷兰文</string>
+    <string name="radio10">土耳其文</string>
+    <!-- articleType -->
+    <string name="at_radio0">国内</string>
+    <string name="at_radio1">社会</string>
+    <string name="at_radio2">国际</string>
+    <string name="at_radio3">娱乐</string>
+    <string name="at_radio4">创业</string>
+    <string name="at_radio5">体育</string>
+    <string name="at_radio6">NBA</string>
+    <string name="at_radio7">足球 </string>
+    <string name="at_radio8">科技 </string>
+    <string name="at_radio9">美女</string>
+    <string name="at_radio10">VR科技</string>
+    <string name="at_radio11">军事</string>
+    <string name="at_radio12">移动</string>
+    <string name="at_radio13">奇闻</string>
+    <string name="at_radio14">IT资讯</string>
+    <string name="at_radio15">旅游</string> 
+    <string name="at_radio16">健康</string>   
+				 
+			
+    
+    <string name="tv_netMean">网络释义</string>
+    <string name="tv_adv">友情广告</string>
+    
+    <string name="btn_tip">提示</string>
+    <string name="btn_cut">斩</string>
+    
+</resources>

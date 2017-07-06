@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/relativeLayout_webpageTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000" >
+
+        <ImageView
+            android:id="@+id/iv_webpage_back"
+            android:layout_width="25dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/tv_webpage_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="27dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/article_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_dictsearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000" >
+
+        <ImageView
+            android:id="@+id/btn_dictsearch_back"
+            android:layout_width="25dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_back" />
+
+        <EditText
+            android:id="@+id/et_dictsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="31dp"
+            android:ems="10"
+            android:hint="输入你想查的词、词、成语"
+            android:textColor="#fff"
+            android:textColorHint="#bbb"
+            android:textCursorDrawable="@drawable/edittext_cursor_shape"
+            android:textSize="14dp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_dictsearch_go"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_img_search" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignRight="@+id/et_dictsearch"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_focus" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:scrollbarThumbHorizontal="@drawable/scrollbar_style_shape" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_showLan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:button="@null"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radio0"
+                            style="@style/selectLan_checked"
+                            android:text="@string/radio1" />
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            style="@style/selectLan"
+                            android:text="@string/radio0" />
+
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            style="@style/selectLan"
+                            android:text="@string/radio2" />
+
+                        <RadioButton
+                            android:id="@+id/radio3"
+                            style="@style/selectLan"
+                            android:text="@string/radio3" />
+
+                        <RadioButton
+                            android:id="@+id/radio4"
+                            style="@style/selectLan"
+                            android:text="@string/radio4" />
+
+                        <RadioButton
+                            android:id="@+id/radio5"
+                            style="@style/selectLan"
+                            android:text="@string/radio5" />
+
+                        <RadioButton
+                            android:id="@+id/radio6"
+                            style="@style/selectLan"
+                            android:text="@string/radio6" />
+
+                        <RadioButton
+                            android:id="@+id/radio7"
+                            style="@style/selectLan"
+                            android:text="@string/radio7" />
+
+                        <RadioButton
+                            android:id="@+id/radio8"
+                            style="@style/selectLan"
+                            android:text="@string/radio8" />
+
+                        <RadioButton
+                            android:id="@+id/radio9"
+                            style="@style/selectLan"
+                            android:text="@string/radio9" />
+
+                        <RadioButton
+                            android:id="@+id/radio10"
+                            style="@style/selectLan"
+                            android:text="@string/radio10" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:id="@+id/scroll_dictresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <LinearLayout
+                        android:id="@+id/LL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_search_word"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="TextView"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_sayOringSound"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                             />
+
+                        <ImageView
+                            android:id="@+id/iv_dictsearch2_like"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/like_vector" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/LL"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/iv_dictsearch_play"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/medium_volum_vector" />
+
+                            <TextView
+                                android:id="@+id/tv_dictsearch_phonetic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_dict_basicexplains"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="#fff"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text="@string/tv_netMean"
+                            android:background="@drawable/topborder_layoutlist"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_dict_webexplains"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#fff"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_dicthistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_dicthistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/search_history" />
+
+            <LinearLayout
+                android:id="@+id/linear_wrap_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topborder_layoutlist"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                 >
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_trash_history"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/trash_vector" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:background="@drawable/topborder_layoutlist"
+                android:text="@string/tv_adv" />
+
+            <LinearLayout
+                android:id="@+id/advZoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/adv" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

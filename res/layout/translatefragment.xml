@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp" >
+<!-- 选择翻译语言 和点击搜索 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+         >
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:drawableTop="@drawable/magnifier"
+            android:background="@drawable/edit_text_focus"
+            android:layout_marginRight="14dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_to"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button1"
+            android:entries="@array/languages" />
+
+    </RelativeLayout>
+
+<!-- 搜索输入框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/topborder_layoutlist"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/from"
+            android:inputType="textMultiLine"
+            android:maxLines="9"
+            android:minLines="6"
+            android:scrollbars="vertical" >
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-30dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_focus"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/btn_clearinput_translet"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/trash_vector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<!-- 滚动布局 -->
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+	<!-- 滚动布局直接子布局 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+		
+	<!-- 搜索记录 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_cihui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                 >
+
+<!-- 历史工具工具 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/topborder_layoutlist" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/search_history"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btn_clear_history"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edit_text_focus"
+                        android:text="@string/clear_search_history"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+            </LinearLayout>
+		<!-- 翻译结果 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:background="#fff"
+                    android:text="@string/tv_res_tip" />
+
+                <TextView
+                    android:id="@+id/tv_translate_res"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/topborder_layoutlist"
+                    android:minLines="8"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/topborder_layoutlist" >
+
+                    <Button
+                        android:id="@+id/btn_sound_translet"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/medium_volum_vector" />
+
+                    <Button
+                        android:id="@+id/btn_love_translet"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/like_vector" />
+
+                    <Button
+                        android:id="@+id/btn_copy_translet"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="80dp"
+                        android:background="@drawable/copy_vector" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

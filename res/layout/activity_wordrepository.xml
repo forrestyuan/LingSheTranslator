@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repository"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="#707070"
+        >
+
+        <TextView
+            android:id="@+id/tv_lable_repository"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:background="#707070"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="我的词库"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/iv_repository_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="184dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="正在开发ing\n目测已经掌握8000词汇量，六级可考451分" />
+
+    </RelativeLayout>
+
+</LinearLayout>

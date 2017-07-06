@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/relativeLayout_reciteTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000" >
+
+        <ImageView
+            android:id="@+id/iv_recite_back"
+            android:layout_width="25dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/tv_recite_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="27dp"
+            android:gravity="center"
+            android:text="纵情享受背诵的愉悦"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_pron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_tip"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/oval2_shape"
+            android:text="@string/btn_tip" />
+
+        <Button
+            android:id="@+id/btn_cut"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="110dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/oval2_shape"
+            android:text="@string/btn_cut" />
+
+        <ImageView
+            android:id="@+id/iv_sound"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/oval2_shape"
+            android:src="@drawable/medium_volum_vector" />
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+			android:layout_centerHorizontal="true"
+            android:src="@drawable/englishdevil" />
+
+    </RelativeLayout>
+
+</LinearLayout>

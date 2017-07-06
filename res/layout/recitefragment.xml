@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="@drawable/recite_shape"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="剩余"
+                        android:textColor="#666" />
+
+                    <TextView
+                        android:id="@+id/tv_leftwords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_horizontal"
+                        android:text="1005个"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="今天背单词"
+                        android:textColor="#666" />
+
+                    <TextView
+                        android:id="@+id/tv_setting_recite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_horizontal"
+                        android:text="200个"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_words_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight="3"
+                    android:paddingLeft="20dp"
+                    android:text="六级词汇"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_changeplan"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/oval2_shape"
+                    android:text="改计划" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/topborder_layoutlist"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_already_recite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="已完成120/1005" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_recite"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" 
+                    android:max="100"
+                    android:progress="20"
+                    android:layout_marginTop="15dp"
+                    android:progressDrawable="@drawable/progressstyle_layoutlist"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_today_hasrecited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#666"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:text="今日需学27/30 " />
+
+    <Button
+        android:id="@+id/btn_recite_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#fff"
+		android:textSize="20sp"
+		android:background="@drawable/oval_shape"
+        android:text="开始背单词吧" />
+
+
+
+</LinearLayout>

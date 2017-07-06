@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <color name="tab_tv_nor">#797979</color>  
+    <color name="tab_tv_sel">#3399dd</color>  
+    <color name="lightcoral">#F08080</color> 
+    <color name="color_text_selected">#DC143C</color>  
+    <color name="color_text_normal">#000000</color>  
+</resources>
